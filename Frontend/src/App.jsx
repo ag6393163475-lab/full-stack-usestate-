@@ -18,7 +18,7 @@ function App() {
 
    async function getData(){
     console.log("...loading");
-    let responce=await fetch("http://localhost:3000/api/products");
+    let responce=await fetch("https://full-stack-usestate-1.onrender.com/api/products");
     let data=await responce.json();
     // console.log(data);
     setProducts(data);
