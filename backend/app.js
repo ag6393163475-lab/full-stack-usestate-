@@ -7,6 +7,7 @@ console.log(products);
 const cors=require('cors');
 app.use(cors());
 
+const PORT=process.env.PORT||3000;
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
