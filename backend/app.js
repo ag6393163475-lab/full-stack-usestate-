@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express();
-const PORT = 3000;
+const PORT = process.env.PORT||3000;
 const {products}=require("./data");
 console.log(products);
 const cors=require('cors');
